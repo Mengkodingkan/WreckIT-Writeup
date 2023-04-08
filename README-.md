@@ -2,14 +2,13 @@
 
 ## 1. Crypto Free Flag 
 ### About:
-**Category: Crypto** <br>
+**Category: Crypto**
 **Author: ayana_@Jhy**
 
 ### Description:
 Seorang NPC pergi ke Lawang Sewu dan mendapati suatu pintu dengan tulisan seperti password. Ada palang bertuliskan Bi UNTUK BINERRRRR!!! password is BiHB32R13 
 
-**File: [soal.secret](https://cdn.discordapp.com/attachments/932997960923480099/1094276062374010890/soal.secret)**
-<br>
+**File: [soal.secret](./files/soal.secret)**
 **Content:**
 ```
 00110100011000010011010001100001001101000011001100110101001101100011010000110101001101010011010100110100001100110011010100111001001101000110001000110101011000010011010000110100001101010011010000110100001110010011010001100100001101000011010000110011001100110011010001100010001101000011001000110100001100110011010100110101001101010011100100110101001100010011001100110010001101000011100000110100001110010011010001100001001101010011000000110101001101110011010001100110001101010011100100110101001101000011010101100001001101000110010000110100011000010011010100110001001101010011100000110100001110010011001100110101001101010011010000110100001100100011010001100011001100110011010100110101001110000011010000111000001101010011000100110011001100100011010000110011001100110011011100110100011001100011010000110110001101010011001000110100001101110011010000110011001100110011010100110100001100100011010000110010001101000011010100110100001101010011010100110111001101000011011000110011001101100011001100110110001101000011010000110100001110010011010001100100001101010011011000110101001110000011010000110111001101000011001100110011001101010011010000110011001101000011010000110100011001100011010001100001001100110011010100110100001101110011001100110100001101010011100100110100011000110011010001100110001101000110010000110101011000010011010100111000001101000011011100110100001100110011010100111000001100110011001100110101001101100011010001100110001101000110000100110011001100100011010100111000001101000011010100110011001101010011010001100011001101010011001100110101001100000011010100110101001100110110010000110011011001000011001101100100001100110110010000110011011001000011001101100100
@@ -18,7 +17,7 @@ Seorang NPC pergi ke Lawang Sewu dan mendapati suatu pintu dengan tulisan sepert
 ### Solution:
 Dari deskripsi soal, kita mengetahui bahwa terdapat clue dalam teks `BiHB32R13`. Dari clue tersebut,
 `Bi = Binary`, `H = Hex`, `B32 = Base32`, `R13 = ROT13`. Dengan menggunakan tool online seperti cyberchef, kita dapat mendapatkan flag dengan contoh seperti digambar berikut:
-![Cyberchef](https://cdn.discordapp.com/attachments/932997960923480099/1094251325497290772/image.png)
+![Cyberchef](./img/img-s1.png)
 
 ### Flag:
 **WRECKIT40{CRYPTO_tolongin_aku_dong!!,_kurangPemanasan_hehehe}**
@@ -26,12 +25,11 @@ Dari deskripsi soal, kita mengetahui bahwa terdapat clue dalam teks `BiHB32R13`.
 ## 2. Rabbithole
 ### About:
 **Category: Misc**
-<br>
 **Author: AOD**
 
 ### Description:
 Anda tau Matryoshka Doll? kali ini aku gembok dengan sandi yang sangat secure!
-**File: [1000.zip](https://cdn.discordapp.com/attachments/932997960923480099/1094276062764085370/1000.zip)**
+**File: [1000.zip](./files/1000.zip)**
 
 ### Solution:
 dalam file **1000.zip** terdapat file yang bersub zip yang membutuhkan password, perkiraan akar file zip tersebut sampai dengan **1.zip**, maka dari itu perlu menggunakan script untuk mempermudah mendapatkan flag yang diperkirakan flag tersebut berada di file **1.zip**
@@ -69,7 +67,7 @@ Setelah melakukan proses diatas, maka akan muncul file `flag.txt` yang berisi:
 
 Terlihat bahwa hash tersebut adalah berasal dari hexadecimal, kamu dapat mengubah menggunakan cyberchef untuk mengubah ke dalam text seperti gambar dibawah ini:
 
-![Flag](https://cdn.discordapp.com/attachments/932997960923480099/1094258299643383838/image.png)
+![Flag](./img/img-s2.png)
 
 ### Flag:
 **WRECKIT40{!_H0p3_u_d1dn'7_d0_i7_m4Nu411y_40D}**
@@ -82,14 +80,12 @@ No Clue
 
 ## 4. Rev Free Flag
 ### About:
-**Category: Reverse Engineering** <br>
+**Category: Reverse Engineering**
 **Author: ayana_@Jhy**
 
 ### Description:
 anggep aja flag gratis bang. kasian banyak yang blom pernah nyentuh ctfd keknya
-
 **File: [chall.c](./files/chall.c)**
-<br>
 **Content:**
 ```c
 #include <stdio.h>
@@ -158,9 +154,8 @@ int main(int argc, char **argv)
 
 ## 5. JWTTT
 ### About:
-**Category: Web**
-<br>
-**Author: ryndrr#2727**
+**Category: Web
+Author: ryndrr#2727**
 
 ### Description:
 Masuklah dengan login
@@ -172,19 +167,19 @@ Saat pertama kali mungkin tidak ada isi sama sekali, tapi sebenarnya dalam file 
 
 Buka DevTool dengan cara klik tombol `F12`, Arahkan ke bagian `Sources` kemudian lihat source code pada folder `app`, tidak perlu fokus ke file `(index)` utama dikarenakan comment name, email dan password hanyalah pengecoh.
 
-![img](https://cdn.discordapp.com/attachments/932997960923480099/1094267177428856982/image.png)
+![img](./img/img-s3.png)
 
 Buka App.js
-![img](https://cdn.discordapp.com/attachments/932997960923480099/1094267637468500098/image.png)
+![img](./img/image-s4.png)
 dalam gambar tersebut terdapat Route DOM, sekarang fokus ke path login dan liat source code dari `"./component/Login";`
 
 Buka Login.js yang berada di path `component/Login.js`
-![img](https://cdn.discordapp.com/attachments/932997960923480099/1094268250197594192/image.png)
+![img](img/img-s4.png)
 
 terdapat sebuah kondisional yang dimana ketika data-input `email == "admin" && password == "superStrongAdminPassword"` maka akan memindahkan navigasi ke dalam path `/flag`. tidak perlu repot repot ke bagian path `/login` dan melakukan proses login seperti kondisi diatas, cukup langsung saja arahkan ke http://167.71.207.218:50620/flag untuk mendapatkan flag.
 
-![img](https://cdn.discordapp.com/attachments/932997960923480099/1094269727368560710/image.png)
+![img](img/img-s5.png)
 
 ### Flag:
-**WRECKIT40(1t_I5_n0T_T0_H4rD_Yyy34hh)**
+WRECKIT40(1t_I5_n0T_T0_H4rD_Yyy34hh)
 
