@@ -25,7 +25,7 @@ Dari deskripsi soal, kita mengetahui bahwa terdapat clue dalam teks `BiHB32R13`.
 ## 2. Rabbithole
 ### About:
 **Category: Misc**
-*Author: AOD**
+**Author: AOD**
 
 ### Description:
 Anda tau Matryoshka Doll? kali ini aku gembok dengan sandi yang sangat secure!
