@@ -31,7 +31,7 @@ Dari deskripsi soal, kita mengetahui bahwa terdapat clue dalam teks `BiHB32R13`.
 Anda tau Matryoshka Doll? kali ini aku gembok dengan sandi yang sangat secure!
 **File: [1000.zip](./files/1000.zip)**
 
-### Solution
+### Solution:
 dalam file **1000.zip** terdapat file yang bersub zip yang membutuhkan password, perkiraan akar file zip tersebut sampai dengan **1.zip**, maka dari itu perlu menggunakan script untuk mempermudah mendapatkan flag yang diperkirakan flag tersebut berada di file **1.zip**
 
 *Note: karna file 1000.zip tidak ada password, sebaiknya diextract terlebih dahulu agar proses extract otomatis akan dimulai dari 999*
@@ -180,6 +180,6 @@ terdapat sebuah kondisional yang dimana ketika data-input `email == "admin" && p
 
 ![img](img/img-s5.png)
 
-## Flag:
+### Flag:
 WRECKIT40(1t_I5_n0T_T0_H4rD_Yyy34hh)
 
